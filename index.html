@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!--Conectando con  index.css----->
+  </head>
+
+  <body onload="ordeAlfabetico()">
+    <div id="main">
+      <header>
+        <div id="logo">
+          <img src="logo.jpg" alt="" />
+        </div>
+
+        <nav>
+          <ul>
+            <li id="inicio">INICIO</li>
+            <li>SERIES</li>
+            <li>PELICULAS</li>
+            <li>ESTRENOS PELICULAS</li>
+          </ul>
+        </nav>
+      </header>
+      <div id="con">
+        <aside id="menu">
+          <div id="generos">
+            <h2>GENEROS</h2>
+            <ul>
+              <li>Accion</li>
+              <li>Animacion</li>
+              <li>Anime</li>
+              <li>Aventura</li>
+              <li>Biografia</li>
+            </ul>
+          </div>
+
+          <button id="top3">TOP_3</button>
+          <button id="orden_f_lanz">ORDENAR_FECHA_LANZAMIENTO</button>
+          <button id="orden_alf">ORDENAR ALFABETICAMENTE</button>
+        </aside>
+        <section id="main-contenedor">
+          <div id="buscadores">
+            <!--Boton Buscar1-->
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar pelicula"
+              />
+              <!--Para ver cuando busca-->
+              <ul id="resultList" class="results-list"></ul>
+            </div>
+            <!--Boton Buscar2-->
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput1"
+                placeholder="Buscar pelicula por año"
+              />
+              <ul id="resultList1" class="result-list"></ul>
+            </div>
+
+            <div class="search-container">
+              <input type="text" id="searchInput2" placeholder="Buscar Rated" />
+              <!--Para ver cuando busca-->
+              <ul id="resultList2" class="results-list"></ul>
+            </div>
+
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput3"
+                placeholder="Buscar fecha de Lanzamiento"
+              />
+              <!--Para ver cuando busca-->
+              <ul id="resultList3" class="results-list"></ul>
+            </div>
+          </div>
+          <div id="contenedor"></div>
+        </section>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+  <style></style>
+</html>

@@ -1,0 +1,110 @@
+#busquedaInput {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+:root {
+  --primario: #24347f;
+  --azul-secundario: #2f41a3;
+}
+
+body {
+  background-color: var(--primario);
+  font-family: "Roboto";
+}
+
+#main {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--primario);
+}
+
+#con {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+  justify-content: space-between;
+}
+header #logo img {
+  height: 60px;
+}
+header > nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  color: white;
+  list-style: none;
+}
+
+header > nav > ul > li {
+  text-decoration: none;
+}
+
+aside#menu {
+  width: 22%;
+  padding: 2em;
+}
+aside #generos {
+  color: aliceblue;
+}
+aside #generos ul {
+  list-style: none;
+  padding: 0.5em 0;
+}
+aside #generos ul li {
+  padding: 0.5em 0;
+}
+aside button {
+  background-color: var(--primario);
+  padding: 0.8em;
+  color: white;
+  border-color: aliceblue;
+  border-width: 2px;
+  margin: 0.5em 0;
+  width: 100%;
+  border-radius: 100px;
+}
+
+section#main-contenedor {
+  width: 70%;
+  padding: 2em 0.5em;
+}
+
+#main-contenedor {
+  background-color: var(--azul-secundario);
+  padding: 1em;
+}
+#buscadores {
+  display: flex;
+  justify-content: space-around;
+}
+#buscadores input[type="text"] {
+  padding: 0.8em;
+  border-radius: 100px;
+}
+#contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.pelicula {
+  width: 40%;
+  border-color: aliceblue;
+  border-width: 2px;
+  padding: 1em;
+  border-radius: 32px;
+  border-style: solid;
+  color: aliceblue;
+}
+.pelicula img {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
